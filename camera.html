@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Capture</title>
+<style>
+.booth {
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+    border: 5px solid #aaa;
+    margin: 0 auto;
+}
+.btn-capture {
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+    <div class="booth">
+        <video id="video" width="500px"></video>
+        <a href="#" id="capture" class="btn-capture"> Take a photo</a>
+        <canvas id="canvas"></canvas>
+    </div>
+
+<script src="{% static 'js/video.js' %}"></script> 
+    
+</body>
+</html>
